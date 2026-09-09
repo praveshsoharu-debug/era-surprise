@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>11 Years of Era & Pravesh ✨</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Cormorant Garamond',serif;
+background:#f7f4f1;
+overflow-x:hidden;
+color:#222;
+}
+
+.sparkle{
+position:fixed;
+width:4px;
+height:4px;
+background:white;
+border-radius:50%;
+animation:float 8s linear infinite;
+opacity:0.7;
+z-index:-1;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+20%{
+opacity:1;
+}
+100%{
+transform:translateY(-100px);
+opacity:0;
+}
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+padding:20px;
+background:
+linear-gradient(rgba(255,255,255,.6),
+rgba(255,255,255,.6)),
+url("images/background.jpg");
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:4rem;
+font-family:'Dancing Script',cursive;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.5rem;
+max-width:700px;
+}
+
+.scroll-btn{
+margin-top:30px;
+padding:14px 30px;
+border:none;
+border-radius:50px;
+cursor:pointer;
+font-size:1rem;
+background:black;
+color:white;
+transition:.3s;
+}
+
+.scroll-btn:hover{
+transform:scale(1.05);
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:3rem;
+margin-bottom:50px;
+font-family:'Dancing Script',cursive;
+}
+
+.story{
+display:flex;
+flex-wrap:wrap;
+gap:40px;
+justify-content:center;
+}
+
+.polaroid{
+background:white;
+padding:15px;
+width:280px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+transform:rotate(-2deg);
+transition:.4s;
+}
+
+.polaroid:nth-child(even){
+transform:rotate(3deg);
+}
+
+.polaroid:hover{
+transform:scale(1.05);
+}
+
+.polaroid img{
+width:100%;
+height:340px;
+object-fit:cover;
+}
+
+.polaroid p{
+text-align:center;
+margin-top:10px;
+font-size:1.1rem;
+}
+
+.letter{
+max-width:850px;
+margin:auto;
+background:white;
+padding:40px;
+line-height:1.8;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+border-radius:20px;
+}
+
+.letter h3{
+font-family:'Dancing Script',cursive;
+font-size:2rem;
+margin-bottom:20px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,.1);
+transition:.3s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.music{
+text-align:center;
+margin-top:40px;
+}
+
+.music a{
+display:inline-block;
+padding:15px 30px;
+background:black;
+color:white;
+text-decoration:none;
+border-radius:50px;
+}
+
+.footer{
+text-align:center;
+padding:80px 20px;
+font-size:1.3rem;
+}
+
+.secret-star{
+position:fixed;
+right:20px;
+bottom:20px;
+font-size:2rem;
+cursor:pointer;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+50%{
+transform:scale(1.3);
+}
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.8rem;
+}
+
+.hero p{
+font-size:1.2rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+    <audio id="bgMusic" loop>
+    <source src="audio/mygirl.mp3" type="audio/mpeg">
+</audio>
+
+<div id="sparkles"></div>
+
+<section class="hero">
+
+<h1>Era & Pravesh ✨</h1>
+
+<p>
+11 years, thousands of memories,
+and one friendship that never changed.
+</p>
+
+<button class="scroll-btn"
+onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">
+Open Our Story 💌
+</button>
+
+</section>
+<section id="story">
+
+<h2 class="section-title">Then & Now</h2>
+
+<div class="story">
+
+<div class="polaroid">
+<img src="images/photo18.jpeg">
+<p>Where it all started ❤️</p>
+</div>
+
+<div class="polaroid">
+<img src="images/photo17.jpeg">
+<p>Still my favourite person ✨</p>
+</div>
+
+<div class="polaroid">
+<img src="images/photo.jpeg">
+<p>Growing up beautifully 🌸</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Our Memory Wall 📸</h2>
+
+<div class="story">
+
+<div class="polaroid"><img src="images/photo1.jpeg"><p>Memory #1 ✨</p></div>
+<div class="polaroid"><img src="images/photo2.jpeg"><p>Memory #2 💖</p></div>
+<div class="polaroid"><img src="images/photo3.jpeg"><p>Memory #3 🌸</p></div>
+<div class="polaroid"><img src="images/photo4.jpeg"><p>Memory #4 😊</p></div>
+
+<div class="polaroid"><img src="images/photo5.jpeg"><p>Memory #5 ✨</p></div>
+<div class="polaroid"><img src="images/photo6.jpeg"><p>Memory #6 💖</p></div>
+<div class="polaroid"><img src="images/photo7.jpeg"><p>Memory #7 🌸</p></div>
+<div class="polaroid"><img src="images/photo8.jpeg"><p>Memory #8 😊</p></div>
+
+<div class="polaroid"><img src="images/photo9.jpeg"><p>Memory #9 ✨</p></div>
+<div class="polaroid"><img src="images/photo10.jpeg"><p>Memory #10 💖</p></div>
+<div class="polaroid"><img src="images/photo11.jpeg"><p>Memory #11 🌸</p></div>
+<div class="polaroid"><img src="images/photo12.jpeg"><p>Memory #12 😊</p></div>
+
+<div class="polaroid"><img src="images/photo13.jpeg"><p>Memory #13 ✨</p></div>
+<div class="polaroid"><img src="images/photo14.jpeg"><p>Memory #14 💖</p></div>
+<div class="polaroid"><img src="images/photo15.jpeg"><p>Memory #15 🌸</p></div>
+<div class="polaroid"><img src="images/photo16.jpeg"><p>Memory #16 ❤️</p></div>
+
+</div>
+
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+11 Things I Love About Era
+</h2>
+
+<div class="cards">
+
+<div class="card">Her smile</div>
+<div class="card">Her kindness</div>
+<div class="card">Her confidence</div>
+<div class="card">Her laugh</div>
+<div class="card">Her honesty</div>
+<div class="card">Her strength</div>
+<div class="card">Her book obsession</div>
+<div class="card">Her patience</div>
+<div class="card">Her support</div>
+<div class="card">Her intelligence</div>
+<div class="card">Simply being Era ❤️</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Letter To Era</h2>
+
+<div class="letter">
+
+<h3>Dear Era,</h3>
+
+<p>
+
+11 years is a long time.
+
+We have changed, grown up,
+made mistakes, learned new things,
+and created memories that I will always keep.
+
+Thank you for being there through every phase.
+
+From childhood memories to today,
+you have always been one of the most important
+people in my life.
+
+Some friendships fade with time,
+but ours became stronger.
+
+No matter where life takes us,
+you will always have a special place in my story.
+
+</p>
+
+<br>
+
+<p>
+With lots of love,<br>
+Pravesh ❤️
+</p>
+
+</div>
+
+<div class="music">
+
+<a href="https://open.spotify.com/search/long%20live%20taylor%20swift"
+target="_blank">
+🎵 Play Our Song
+</a>
+
+</div>
+
+</section>
+
+<section class="footer">
+
+✨ Some friendships become family ✨
+
+<br><br>
+
+Era & Pravesh ❤️
+
+</section>
+
+<div class="secret-star" onclick="secretMessage()">
+⭐
+</div>
+
+<script>
+
+function secretMessage(){
+alert(
+"Dear Era ❤️\n\nThank you for being my best friend for 11 years. No matter what happens, I will always be grateful for every memory we made together.\n\nLove, Pravesh ✨"
+);
+}
+
+for(let i=0;i<70;i++){
+
+const sparkle=document.createElement('div');
+
+sparkle.classList.add('sparkle');
+
+sparkle.style.left=Math.random()*100+'vw';
+
+sparkle.style.animationDuration=
+(Math.random()*5+5)+'s';
+
+sparkle.style.animationDelay=
+Math.random()*5+'s';
+
+document.body.appendChild(sparkle);
+
+}
+window.addEventListener("load", () => {
+
+    const music = document.getElementById("bgMusic");
+
+    document.body.addEventListener("click", () => {
+        music.play();
+    }, { once: true });
+
+});
+
+</script>
+
+</body>
+</html>
